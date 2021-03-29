@@ -1,0 +1,198 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+* {
+  box-sizing: border-box;
+}
+
+.main{
+  width: 100%;
+}
+.header{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color:whitesmoke;
+  position: fixed;
+   top: 0;
+      
+}
+.header p{
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+.header p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+.nav{
+  top: 70px;
+  width: 100%;
+  position: fixed;
+   top: 1;
+}
+.nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  overflow: hidden;
+  height: auto;
+  
+ 
+}
+.nav li{
+  float: left;
+}
+li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding:10px 74px;
+  text-align: center;
+}
+li:not(.contact){
+  border-right: 1px solid #bbb;
+}
+li:last-child, {
+  border-right: none;
+}
+.about{
+  background-color:#ee5d5d ;
+}
+li:hover:not(.about){
+  background-color: #111;
+}
+.dropdown{
+  display: inline-block;
+ 
+}
+.dropdown-content{
+  display:none ;
+ position: absolute; 
+  min-width: 160px;
+  box-shadow: 0px 10px 36px 0px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  z-index: 1;
+  
+}
+.dropdown-content a{
+color: black;
+}
+.dropdown-content a:hover{
+  background-color: #f1f1f1;
+}
+ .dropdown:hover .dropdown-content{
+  display: block;
+}
+
+
+.about:hover{
+  background-color: brown;
+}
+.column{
+  margin-top: 110px;
+  float: left;
+  
+}
+.column.side1 {
+  width: 75%;
+  overflow-y:scroll;
+  height: 650px;
+}
+
+.column.side2{
+  width: 25%;
+  background-color:white;
+  height: 600px;
+  overflow: hidden;
+  box-shadow: 0px 10px 36px 0px rgba(0, 0, 0, 0.3);
+  
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.post{
+  background-color:#ee5d5d ;
+  margin-top: 100px;
+  text-align: center;
+}
+.post2 a{
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  word-spacing: 2px;
+}
+/* unvisited link */
+.post2 a:link {
+  color: blue;
+}
+
+/* visited link */
+.post2 a:visited {
+  color: blue;
+}
+
+/* mouse over link */
+.post2 a:hover {
+  color: red;
+}
+
+/* selected link */
+.post2 a:active {
+  color: blue;
+}
+.footer{
+  width: 100%;
+  background-color: whitesmoke;
+  height:auto;
+  padding: 6px;
+  text-align: center;
+}
+.img1{
+  float: left;
+}
+.img2{
+  float: right;
+}
+.clearfix{
+  box-shadow: 0px 10px 36px 0px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  padding: 5px;
+}
+.clearfix:hover{
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+.p1{
+  word-spacing: 2px;
+  padding-left: 10px;
+}
+button{
+  border-radius: 8px;
+  
+  outline: none;
+}
+button:hover{
+  background-color:#ee5d5d ;
+}
+input[type="text" ]{
+  margin-left:2px ;
+  width: 100%;
+  padding: 4px 20px 4px 40px;
+  border: 2px solid #ccc;
+  border-radius: 7px;
+  box-sizing: border-box;
+  background-image: url(searchicon.png);
+  background-repeat: no-repeat;
+  background-position: 5px;
+  
+}

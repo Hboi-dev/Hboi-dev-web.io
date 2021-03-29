@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image gallery</title>
+</head>
+<style>
+  div.gallery{
+    width: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.301);
+    float: left;
+    margin-left: 10px;
+    margin-top: 15px;
+    position: relative; 
+  }
+ 
+  img{
+    width: 400px;
+    height: auto;
+    
+  }
+  div.text{
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+  }
+  div.gallery:hover{
+    border: 1px solid black;
+  }
+.drop{
+   position: absolute;
+   display: none;
+   box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.5);
+   min-width: 200px;
+   background-color: white;
+   z-index: 1;
+   padding: 25px;
+   font-size: 17px;
+
+ }
+ .gallery:hover .drop{
+   display: block;
+ }
+ .gallery:hover .drop:hover{
+   background: black;
+   color: white;
+   cursor: pointer;
+ }
+ .drop:hover span{
+   font-style: italic;
+ }
+</style>
+<body>
+  <div>
+    <div class="gallery">
+      <img src="img_5terre.jpg" alt="terre">
+      <div class="text">Add a description of the image here</div>
+      <div class="drop">This is a Terre image. You can add more Bio here.<span> &copy;Hboi-Dev</span></div> 
+     </div>
+    
+    <div class="gallery">
+      <img src="img_forest.jpg" alt="forest">
+      <div class="text">Add a description of the image here</div>
+      <div class="drop">This is a Forest image. You can add more Bio here.<span> &copy;Hboi-Dev</span></div> 
+    </div>
+    <div class="gallery">
+      <img src="img_lights.jpg" alt="lights">
+      <div class="text">Add a description of the image here </div>
+     
+      <div class="drop">This is a Image of light in the sky. You can add more Bio here.<span> &copy;Hboi-Dev</span></div> 
+    </div>
+    <div class="gallery">
+      <img src="img_mountains.jpg" alt="mountains">
+      <div class="text">Add a description of the image here</div>
+      <div class="drop">This is a Image mountains. You can add more Bio here.<span> &copy;Hboi-Dev</span></div> 
+    </div>  
+  </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hor Nav Bar</title>
+  <style>
+    .Header{
+      position: fixed;
+      top: 0;
+      width: 100%;
+
+    }
+    ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background-color: #333;
+      overflow: hidden;
+     
+      
+    }
+    li{
+      float: left;
+      border-right: 1px solid #bbb;
+    }
+    li:last-child{
+      border-right: none;
+    }
+
+    li a, .News {
+      color: ghostwhite;
+      text-decoration: none;
+      display: block;
+      padding: 14px 50px;
+      text-align: center;
+    }
+    #nav{
+      color: ghostwhite;
+      text-decoration: none;
+      display: block;
+      padding: 14px 50px;
+      text-align: center;
+    }
+    .active{
+      background-color: #4CAF50;
+      
+    }
+ li .dropdown:hover, a:hover:not(.active), .News:hover{
+  background-color: #111;
+ }
+ li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 10px 26px 0px rgba(0,0,0,0.5);
+    z-index: 1;
+    
+}
+.dropdown-content a{
+  color: black;
+   display: block;
+   text-decoration: none;
+   padding: 10px 5px;
+   font-size: 20px;
+   letter-spacing:2px;
+ }
+ .dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+  </style>
+</head>
+<body>
+  <div class="Header">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li class="dropdown">
+        <a href="#" class="News">News</a>
+        <div class="dropdown-content">
+          <a href="#">Nigeria</a>
+          <a href="#">USA</a>
+          <a href="#">Mexico</a>
+          <a href="#">China</a>
+        </div>
+      </li>
+      <li><a href="#">Contact</a></li>
+      <li style="float: right"><a href="#" class="active" id="nav">About</a></li>
+    </ul>
+  </div>
+  
+  <div style="padding:20px;height:1500px; width: 100%; margin-top: 30px;" >
+    <h1>Fixed Top Navigation Bar</h1>
+    <h2>Scroll this page to see the effect</h2>
+    <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+    
+    <p>Some text some text some text some text..</p>
+    <p>Some text some text some text some text..</p>
+    <p>Some text some text some text some text..</p>
+    <p>Some text some text some text some text..</p>
+    <p>Some text some text some text some text..</p>
+    <p>Some text some text some text some text..</p>
+    <p>Some text some text some text some text..</p>
+    <p>Some text some text some text some text..</p>
+    <p>Some text some text some text some text..</p>
+    <p>Some text some text some text some text..</p>
+    <p>Some text some text some text some text..</p>
+    <p>Some text some text some text some text..</p>
+    <p>Some text some text some text some text..</p>
+    <p>Some text some text some text some text..</p>
+    <p>Some text some text some text some text..</p>
+    <p>Some text some text some text some text..</p>
+    <p>Some text some text some text some text..</p>
+    <p>Some text some text some text some text..</p>
+    <p>Some text some text some text some text..</p>
+    <p>Some text some text some text some text..</p>
+    </div>
+    
+</body>
+</html>
